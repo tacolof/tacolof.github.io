@@ -1,0 +1,38 @@
+html {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  cursor: url("images/tiny-taco.png"), auto;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+*[alt="olof"] {
+  flex: 0 0 2;
+  height: 100%;
+}
+
+*[alt="taco"] {
+  flex: 0 1 1;
+  animation: taco 3s linear infinite;
+}
+
+@keyframes taco {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  }
+}
